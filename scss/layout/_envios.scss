@@ -19,33 +19,34 @@ main {
   padding: 20px;
   position: relative;
   width: 300px;
-}
+  border:10px solid $blue-dark1;
+  p {
+    margin-bottom: 0;
+  }
+  div {
+    padding-top: 30px;
+  }
+  h1 {
+    color: $main-color;
+    overflow: hidden;
+  }
+  }
 .mapas iframe {
   max-width: 100%;
 }
 
 
-h1 {
-  color: $main-color;
-}
-
 .zona { 
-position: absolute; 
+position:absolute; 
 top: 0; 
 left: 0; 
-width: 300px;
-background-color: $secondary-color;
+width: 250px;
 padding: 10px; 
-margin: 0;
+margin: 15px;
+overflow: hidden;
 }
 
-div {
-  padding-top: 30px;
-}
 
-p {
-  margin-bottom: 0;
-}
 
 footer {
   background-color: $main-color;

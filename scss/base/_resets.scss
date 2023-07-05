@@ -1,19 +1,14 @@
 #titulo1 {color: rgb(204, 227, 247);
 font-family: Arial, Helvetica, sans-serif;}
 
-p { font-style:initial;
-    width: 150;
-    height: 200;}
 
 @mixin titulos {
     color: $blue-dark;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    margin: 30px;
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     padding: 10px;
     background-color: $blue-medium;
 }
@@ -39,26 +34,6 @@ body {background-image: url(https://i.pinimg.com/564x/cb/ca/7a/cbca7a89031a79f24
     @include titulos
 }
 
-.slide {margin-top: 10px;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    img {margin-top: 10px;
-        width: 100px;
-        height: 100px;
-        align-content: center;
-        align-items: center;
-    }
-}
-
-
-.texto-parrafo { 
-    display:flex;
-    gap:5px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-}
 
 
 .perfume { 
