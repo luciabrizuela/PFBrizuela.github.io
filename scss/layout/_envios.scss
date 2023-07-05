@@ -1,0 +1,55 @@
+$main-color: #0e153a; // Color azul oscuro principal
+$secondary-color: #ffffff; // Color de texto
+
+
+// Estilos específicos para la página de envíos
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.mapas {
+  background-color: $secondary-color;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  position: relative;
+  width: 300px;
+}
+.mapas iframe {
+  max-width: 100%;
+}
+
+
+h1 {
+  color: $main-color;
+}
+
+.zona { 
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 300px;
+background-color: $secondary-color;
+padding: 10px; 
+margin: 0;
+}
+
+div {
+  padding-top: 30px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: $main-color;
+  padding: 20px;
+  text-align: center;
+  color: $secondary-color;
+}
