@@ -7,12 +7,9 @@
     $blue-dark1: #112036;
     
 
-.carousel-item img {
-            height: 300px; /* Altura fija */
-            /* o */
-            width: 300px;; /* Altura proporcional */
-        }
-
+    body {
+        overflow-x: hidden;
+    }
 
 .contenedor-nosotros {
     height: auto;

@@ -1,10 +1,15 @@
 .encabezado {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: inline-flex;
   background-color: #132533;
-  padding: 10px;
+  position: relative;
   width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 400px) {
+  .encabezado {
+    background-color: transparent;
+  }
 }
 
 .logoglm {
@@ -12,14 +17,12 @@
   height: 100px;
   object-fit: cover;
   border-radius: 100%;
-}
+  }
 
-.menu-navegador {
+.navbar-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 10px;
-  flex: 1; 
 
   li {
     list-style: none;
@@ -31,6 +34,7 @@
       color: #ffffff;
       text-decoration: none;
       border-radius: 4px;
+      justify-content: flex-end
     }
   }
 }
