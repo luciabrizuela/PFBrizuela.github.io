@@ -3,6 +3,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+  font-style: initial;
+  width: 150;
+  height: 200;
+}
+
 body {
   background-image: url(https://i.pinimg.com/564x/cb/ca/7a/cbca7a89031a79f24e056af421508d01.jpg);
 }
@@ -15,18 +21,26 @@ body {
   color: #0f2134;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
+  margin: 30px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   padding: 10px;
   background-color: #336699;
 }
-.contenedor .perfume {
-  padding: 40px;
-  width: 350px;
-  height: 360px;
-  object-fit: cover;
+.contenedor .d-block {
+  max-width: 50%;
+  max-height: 350px;
 }
+.contenedor .texto-parrafo {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .contenedor .parrafo {
   background-color: #336699;
   font-style: italic;
@@ -48,9 +62,11 @@ body {
   color: #0f2134;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
+  margin: 30px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   padding: 10px;
   background-color: #336699;
 }
@@ -84,7 +100,6 @@ nav {
   align-items: center;
   background-color: #132533;
   padding: 10px;
-  width: 100%;
 }
 
 .logoglm {
@@ -208,129 +223,32 @@ h3, h2 {
   color: #0f2134;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
+  margin: 30px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   padding: 10px;
   background-color: #336699;
   color: #aac6e4;
 }
 
 h1 {
-  color: #0f2134;
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  padding: 10px;
-  background-color: #336699;
-}
-
-.slide {
-  margin-top: 30px;
-  width: 400px;
-  height: 500px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-bottom: 30px;
-  margin: 0 auto;
-}
-.slide img {
-  margin-top: 10px;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-
-.carousel-item img {
-  height: 300px; /* Altura fija */
-  /* o */
-  width: 300px; /* Altura proporcional */
-}
-
-.contenedor-nosotros {
-  height: auto;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px;
-  border: #112036 solid;
-}
-.contenedor-nosotros h1 {
-  color: #0f2134;
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  padding: 10px;
-  background-color: #336699;
-}
-.contenedor-nosotros p {
-  font-style: "Times New Roman", Times, serif;
   color: #112036;
-  padding: 30px;
-  margin: 20px;
-  width: 90%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  overflow: auto;
-}
-@media screen and (max-width: 767px) {
-  .contenedor-nosotros .contenedor-nosotros {
-    height: auto;
-    padding: 10px;
-  }
-  .contenedor-nosotros p {
-    padding: 10px;
-    margin: 10px;
-  }
-}
-
-.contenedor-video {
-  padding: 50px;
-  margin: 30px;
-  height: 500px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-}
-
-.titulo2 {
-  color: #112036;
-  background-color: rgb(89, 130, 192);
-  text-align: center;
-  margin: 30px;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.productos1 a {
-  display: inline-block;
-  padding: 10px;
   background-color: #336699;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 4px;
+  text-align: center;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.productos1 img {
+  max-width: 100%;
+  height: 400px;
+  margin: 50px;
 }
 
 main {
@@ -348,32 +266,30 @@ main {
   padding: 20px;
   position: relative;
   width: 300px;
-  border: 10px solid #112036;
-}
-.mapas p {
-  margin-bottom: 0;
-}
-.mapas div {
-  padding-top: 30px;
-}
-.mapas h1 {
-  color: #0e153a;
-  overflow: hidden;
 }
 
 .mapas iframe {
   max-width: 100%;
 }
 
+h1 {
+  color: #0e153a;
+}
+
 .zona {
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 300px;
+  background-color: #ffffff;
   padding: 10px;
-  margin: 15px;
-  overflow: hidden;
+  margin: 0;
 }
+
+div {
+  padding-top: 30px;
+}
+
 
 footer {
   background-color: #0e153a;
