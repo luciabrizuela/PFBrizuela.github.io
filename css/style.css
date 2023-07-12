@@ -8,6 +8,12 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: solid;
+}
+
 .contenedor {
   display: block;
   align-items: center;
