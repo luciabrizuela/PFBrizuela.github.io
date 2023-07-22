@@ -152,6 +152,8 @@ footer {
   padding: 20px;
   text-align: center;
   color: #ffffff;
+  height: auto;
+  padding-bottom: 0%;
 }
 
 main {
@@ -272,18 +274,22 @@ h1 {
 
 .slide {
   margin-top: 30px;
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 900px;
   align-items: center;
   justify-content: center;
   display: flex;
   margin-bottom: 30px;
-  margin: 0 auto;
 }
 .slide img {
   margin-top: 10px;
-  width: 300px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 900px;
 }
 
 body {
@@ -378,12 +384,12 @@ nav {
 }
 
 .productos1 img {
-  max-width: 45%;
-  height: 40%;
+  max-width: 30%;
+  height: 30%;
   transition: transform 0.3s ease;
 }
 .productos1 img:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 .productos1 {
