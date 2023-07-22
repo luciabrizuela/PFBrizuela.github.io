@@ -8,7 +8,7 @@ $blue-dark1: #112036;
 
 
 .uno img {
-    max-width: 100%;
+    max-width: 40%;
     height: 400px;
     margin: 50px;
     display: inline-block;
@@ -17,37 +17,42 @@ $blue-dark1: #112036;
     max-width: 100%;
     height: 400px;
     margin: 50px;
-}
+    transition: transform 0.3s ease; 
+    &:hover {
+        transform: scale(1.3); }
+    }
 
+@media screen and (max-width: 768px) {
+    .uno {
+      flex-direction: column;
+    }
+  }
+  
 .dos img {
-    max-width: 100%;
+    max-width: 40%;
     height: 400px;
     margin: 50px;
     display: inline-block;
     width: 70%;
-    vertical-align: middle; }
+    vertical-align: middle;
+    transition: transform 0.3s ease; 
+    &:hover {
+        transform: scale(1.3); }
+    }
 
 @media (max-width: 768px) {
         .dos, .uno {
-        display: flex;
+        flex-direction: column;
         flex-wrap: nowrap;
         }
 
         .uno img, .dos img {
         width: 100%;
+        max-width: 40%;
+        object-fit: cover
         }
     }
-@media (min-width: 769px) {
-        .dos, .uno {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 100%;
-        height: 400px;
-        margin: 50px;
-        
-        }
-    }
+
 
 h3, h2 {
         @include titulos;
