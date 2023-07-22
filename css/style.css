@@ -59,21 +59,13 @@ p {
   }
 }
 
-.productos1 img {
-  max-width: 40%;
-  height: 40%;
-  transition: transform 0.3s ease;
-}
-.productos1 img:hover {
-  transform: scale(1.3);
-}
-
 .productos1 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  height: 50%;
 }
 
 @media screen and (max-width: 768px) {
